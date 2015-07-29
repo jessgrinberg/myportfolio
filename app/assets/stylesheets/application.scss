@@ -1,0 +1,476 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+html {
+ 
+}
+
+body {
+	margin:0;
+	font-size: 14px;
+	 background-color: #f6d8d0;
+
+}
+
+
+
+img {
+	width: 150px ;
+	height: 150px;
+}
+/*
+header{
+text-align: center;
+}*/
+
+#top {
+/*	position: fixed;*/
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	z-index: 0;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	background-color: #f6d8d0;
+}
+
+
+
+/*.name {
+	display: block;
+	color: white;
+	font-family: Helvetica;
+	position: absolute;
+	z-index: 300;
+	text-align: center;
+	letter-spacing: .05em;
+	font-size: 4em;
+	border-style: solid;
+    border-width: 4px;
+    padding: 10px;
+    margin-top: -30px;
+}*/
+
+#name {
+	display: block;
+	position: absolute;
+	font-family: Helvetica Neue;
+	font-weight: 10px;
+	color: white;
+	margin-top: 40vh;
+	font-size: 3vw;
+	z-index: 300;
+	text-align: center;
+	width: 100vw;
+	letter-spacing: .15em;
+	/*border-style: solid;*/
+    border-width: 4px;
+    padding: 15px;
+}
+
+.main {
+  z-index: 300;
+
+}
+	
+
+#project {
+	font-family: Helvetica;
+	font-weight: normal;
+	color: black;
+	z-index: 300;
+	text-align: left;
+	letter-spacing: .15em;
+/*    padding: 15px;*/
+}
+
+nav {
+	color: white;
+	margin:30px;
+}
+
+.menu {
+	position: absolute;
+	top: 2.5vh;
+	right: 2.5vw;
+	font-size: 2em;
+	
+}
+
+.menuToggle {
+	position: absolute;
+	top: 5em;
+	z-index: 3000;
+	width: 100vw;
+	text-align: right;
+}
+
+.menuItem {
+	color: black;
+	background-color: transparent;
+	font-weight: bold;	
+	padding: .5em 2em;
+	color: white;
+	font-family: Helvetica;
+	font-weight: 10px;
+	letter-spacing: .5em;
+}
+
+.css-typing
+{
+    width: 100vw;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 8s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+hr {
+
+	border-style: solid;
+    border-width: 1px;
+    border-color: white;
+
+}
+
+
+#bottom {
+	width: 120vw;
+	height: 10vh;
+	margin-left: -30%;
+/*	top: 0;*/
+	z-index: 0;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;	
+  	background-color: #B27B6C;
+}
+/*.class {
+	text-align: center;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+*/
+
+
+
+.content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    
+}
+.table{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+  /*  color:#fff;*/
+}
+
+.img1{
+    background-image: url('ttt.png');
+}
+.img2{
+    background-image: url('phirst');
+}
+.img3{
+    background-image: url('appty.png');
+}
+.img4{
+    background-image: url('Logo-appty.png');
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 12%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color:#f6d8d0;
+    overflow:hidden;
+/*	border-style: solid;
+    border-width: 4px;
+    border-color: white;*/
+}
+
+.content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+
+    
+}
+
+
+/*  For list */
+ul{
+    text-align:left;
+    margin:5% 0 0;
+    padding:0;
+    list-style-position:inside;
+    display: inline-block;
+}
+li{
+    margin: 0 0 0 5%;
+    padding:0;
+}
+
+.content .rs{
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+}
+
+.numbers{
+    font-weight:900;
+    font-size:100px;
+}
+
+.project2 {
+	background-color: black;
+}
+
+.numbers2 {
+	font-family: windsor light;
+	color: yellow;
+	font-size: 22px;
+}
+
+.project1 {
+	background-color: white;
+}
+
+
+.numbers1 {
+	font-family: Didot;
+	color: black;
+	font-size: 22px;
+}
+
+h1.page-header {
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #FFFFFF;
+   	font-family: Helvetica Neue;
+	font-weight: 10px;
+	color: white;
+}
+
+h3 {
+	font-family: Helvetica Neue;
+/*	font-weight: 10px;*/
+	letter-spacing: .05em;
+	
+}
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #18bc9c;
+    background: #fff;
+}
+
+.btn .fa {
+    padding-right: 15px;
+}
+
+
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+ /*   border-bottom: 1px solid #FFF7F5;*/
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+/*.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}*/
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #18bc9c;
+}
+
+form .row:first-child .floating-label-form-group {
+/*    border-top: 1px solid #eee;*/
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    /* border-radius: 6px; */
+    background-color: #f6d8d0;
+    border-style: solid;
+    border-radius: 0;
+    border-color: white;
+    border-width: 4px; 
+   }
+
+.btn:hover, .btn:focus, .btn.focus {
+    background-color: #EFCBC2;
+    text-decoration: none;
+}
+
+/*a [class^="icon-"], a [class*=" icon-"] {
+    display: inline;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+}*/
+
+/*[class^="icon-"], [class*=" icon-"] {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+}*/
+
+#iconer {
+    background: 0 0;
+    color: #fff;
+    padding: 80px 0;
+}
+
+ul, menu, dir {
+  /*  display: block;*/
+      display: inline;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+    list-style-type: none;
+}
+
+#iconer .socials {
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+#iconer .socials li a {
+/*    display: inline-block;*/
+    width: 48px;
+    height: 48px;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    -webkit-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+}
+
+
+.jumbotron {
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    background-color: #eee;
+}
