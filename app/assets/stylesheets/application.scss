@@ -302,7 +302,7 @@ h3 {
 	font-family: Helvetica Neue;
 /*	font-weight: 10px;*/
 	letter-spacing: .05em;
-	
+
 }
 
 .btn-outline {
@@ -325,9 +325,12 @@ h3 {
 
 .btn .fa {
     padding-right: 15px;
+    font-size: 24px;
 }
 
-
+.fa {
+	font-size: 24px;
+}
 
 .floating-label-form-group {
     position: relative;
@@ -344,7 +347,7 @@ h3 {
     padding-left: 0;
     border: 0;
     border-radius: 0;
-    font-size: 1.5em;
+    font-size: 1.25em;
     background: 0 0;
     box-shadow: none!important;
     resize: none;
@@ -393,8 +396,8 @@ form .row:first-child .floating-label-form-group {
     background-color: #f6d8d0;
     border-style: solid;
     border-radius: 0;
-    border-color: white;
-    border-width: 4px; 
+/*    border-color: white;
+*/    border-width: 4px; 
    }
 
 .btn:hover, .btn:focus, .btn.focus {
@@ -429,12 +432,18 @@ form .row:first-child .floating-label-form-group {
 #iconer {
     background: 0 0;
     color: #fff;
-    padding: 80px 0;
+    padding: 10px 0;
+}
+
+li {
+	display: inline;
+	text-align: center;
+	padding: 15px;
 }
 
 ul, menu, dir {
   /*  display: block;*/
-      display: inline;
+     display: inline;
     list-style-type: disc;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
@@ -444,10 +453,10 @@ ul, menu, dir {
     list-style-type: none;
 }
 
-#iconer .socials {
-    margin: 0 0 24px;
+/*#iconer .socials {
+    margin: 0 auto;
     padding: 0;
-}
+}*/
 
 #iconer .socials li a {
 /*    display: inline-block;*/
@@ -465,7 +474,7 @@ ul, menu, dir {
 }
 
 
-.jumbotron {
+/*.jumbotron {
     padding: 30px;
     margin-bottom: 30px;
     font-size: 21px;
@@ -473,4 +482,14 @@ ul, menu, dir {
     line-height: 2.1428571435;
     color: inherit;
     background-color: #eee;
+}*/
+
+#main-footer {
+    background: black;
+    opacity: .98;
+    color: #fff;
+    padding: 30px 0 15px;
+      height: 100px;
+    width: 100%;
+    margin-top: 25px;
 }
